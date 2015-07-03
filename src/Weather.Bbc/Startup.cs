@@ -8,14 +8,13 @@ namespace Weather.Bbc
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app)
         {
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseMvc();
+            app.UseWelcomePage();
         }
     }
 }
