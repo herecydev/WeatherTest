@@ -1,14 +1,14 @@
-#.net Weather Test
-Create an application/website which given a location will display an aggregated weather result (temperature and wind speed) from the two supplied API's. 
+# .NET Weather Test
+Create an application/website which given a location will display an aggregated weather result (temperature and wind speed) from the two supplied APIs. 
 
 Your application/website should:
  - Allow the user to choose which measurement unit they want results displayed in (mph, kph, celsius, fahrenheit).
- - Allow for more API's to be easily added in the future.
- - Handle one or more of the API's being down or being slow to respond.
+ - Allow for more APIs to be easily added in the future.
+ - Handle one or more of the APIs being down or being slow to respond.
  - Given temperatures of 10c from bbc and 68f from accuweather when searching then display either 15c or 59f (the average).
  - Given windspeeds of 8kph from bbc and 10mph from accuweather when searching then display either 12kph or 7.5mph (the average).
- - Given an empty or null location when searching then not request from the API's.
- - Handle HTTP error codes from the API's without displaying these to the user.
+ - Given an empty or null location when searching then do not make a request to the APIs.
+ - Handle HTTP error codes from the APIs without displaying these to the user.
 
 This challenge should only take you a few hours to complete, 
 should be written in a way that shows you have a good understanding of design patterns and SOLID principles 
