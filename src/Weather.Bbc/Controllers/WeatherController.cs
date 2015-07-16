@@ -3,8 +3,7 @@ using System;
 using Weather.Bbc.Models;
 
 namespace Weather.Bbc.Controllers
-{
-    [Route("api/[controller]")]
+{    
     public class WeatherController : Controller
     {
         private Random _rng;
@@ -14,6 +13,7 @@ namespace Weather.Bbc.Controllers
             _rng = new Random();
         }
 
+        [Route("api/[controller]/{location}")]
         [HttpGet]
         public WeatherResult Get(string location) 
             => new WeatherResult(

@@ -4,7 +4,6 @@ using Weather.AccuWeather.Models;
 
 namespace Weather.AccuWeather.Controllers
 {
-    [Route("api/[controller]")]
     public class WeatherController : Controller
     {
         private Random _rng;
@@ -14,6 +13,7 @@ namespace Weather.AccuWeather.Controllers
             _rng = new Random();
         }
 
+        [Route("api/[controller]/{location}")]
         [HttpGet]
         public WeatherResult Get(string location)
             => new WeatherResult(
