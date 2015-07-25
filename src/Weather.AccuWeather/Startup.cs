@@ -8,11 +8,16 @@ namespace Weather.AccuWeather
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSwagger();
         }
 
         public void Configure(IApplicationBuilder app)
         {
             app.UseMvc();
+            
+            app.UseSwagger();
+            app.UseSwaggerUi();
+
             app.UseWelcomePage();
         }
     }
