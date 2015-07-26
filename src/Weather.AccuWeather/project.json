@@ -16,6 +16,11 @@
     "Swashbuckle": "6.0.0-beta2"
   },
 
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/mattridgway/WeatherTest" 
+  },
+
   "commands": {
       "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001"
   },
