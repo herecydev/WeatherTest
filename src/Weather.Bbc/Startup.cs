@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
 
 namespace Weather.Bbc
@@ -9,11 +8,14 @@ namespace Weather.Bbc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSwagger();
         }
 
         public void Configure(IApplicationBuilder app)
         {
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUi();
             app.UseWelcomePage();
         }
     }
