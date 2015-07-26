@@ -1,7 +1,13 @@
 ﻿{
-  "webroot": "wwwroot",
-  "version": "1.0.0-*",
+  "version": "1.1.0-*", 
+  "description": "Mock BBCWeather Provider", 
+  "summary": "Provides mock weather information for creating the WeatherTest application", 
+  "authors": [ "Matt Ridgway" ], 
+  "tags": [ "WeatherTest WebApi AspNet vNext" ], 
+  "projectUrl": "https://github.com/mattridgway/WeatherTest", 
+  "licenseUrl": "https://github.com/mattridgway/WeatherTest/LICENSE", 
 
+  "webroot": "wwwroot",
   "dependencies": {
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
